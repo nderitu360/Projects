@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Litunene Insuarance Agency</title>
+	<style type="text/css">
+		@import url('https:fonts.googleapis.com/css2?familypoppins');
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'times new roman', sans-serif;
+		}
+	
+		
+		.header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px 100px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 99;
+			
+
+		}
+
+		footer{
+	background: url(https://wallpaperaccess.com/full/1603870.png) ;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+		}
+		.header .logo{
+			font-size: 1.7em;
+			color: #fff;
+			text-decoration: none;
+			
+		}
+
+		.nav a{
+			position: relative;
+			font-size: 1.1em;
+			color: #fff;
+			text-decoration: none;
+			margin-left: 40px;
+		}
+
+		.nav a::after{
+			content: ' ';
+			position: absolute;
+			left: 0;
+			bottom: -6px;
+			width: 100%;
+			height: 3px;
+			background: #fff;
+			border-radius: 5px;
+			transform: scaleX(0);
+			transition: .5s;
+		}
+
+		.nav a:hover::after{
+			transform: scaleX(1);
+		}
+		.home{
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			background: url(https://th.bing.com/th/id/R.8c4cad6fbbe12db5d9b74e8128154b38?rik=g0etFU2g0DCaqQ&pid=ImgRaw&r=0);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 80px 100px 0;
+		}
+
+		.home .content{
+			max-width: 600px;
+			color: #fff;
+}  
+.content h2{
+	font-size: 3em;
+	letter-spacing: .03em;
+}
+.content p{
+	margin: 10px 0 40px;
+}
+.content a{
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	font-weight: 500;
+	padding: 10px 40px;
+	border-radius: 40px;
+	transition: .5s;
+}
+.content a:hover{
+	background: #34160B;
+}
+
+.home .wrapper-login{
+		position: relative;
+		width: 440px;
+
+}
+
+.wrapper-login  h2{
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+}
+
+.wrapper-login .input-box{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	margin: 40px 0;
+}
+.input-box input{
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	border: 1px solid #fff;
+	outline: none;
+	border-radius: 40px;
+	color: #fff;
+	padding: 10px;
+	
+}
+.input-box label{
+	position: absolute;
+	top: 50%;
+	left: 45px;
+	transform: translateY(-50%);
+	font-size: 1em;
+	color: #fff;
+	pointer-events: none;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+	font-size: .8em;
+	top: -14px;
+	left: 17px;
+
+}
+
+.input-box .icon{
+	position: absolute;
+	top: 14px;
+	left: 15px;
+	font-size: 1.2em;
+	color: #fff;
+}
+.wrapper-login .remember-forgot{
+	font-size: .9em;
+	color: #fff;
+	font-weight: 500;
+	margin: -25px 0 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.remember-forgot label input{
+	accent-color: darkblue;
+	margin-right: 3px;
+}
+.remember-forgot a{
+	color: #fff;
+	text-decoration: none;
+}
+.remember-forgot a:hover{
+	text-decoration: underline;
+}
+
+.wrapper-login .butn{
+	width: 100%;
+	height: 50px;
+	border: none;
+	outline: none;
+	border-radius: 40px;
+	background: linear-gradient(90deg, darkblue, lightblue);
+	box-shadow: 0 8px 10px rgba(0 , 0,  0,  .5);
+	cursor: pointer;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 500;
+}
+
+.wrapper-login .register-link{
+		font-size: .9em;
+		color: #fff;
+		text-align: center;
+		margin: 30px 0;
+}
+
+.register-link p a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.register-link p a:hover{
+		text-decoration: underline;
+
+}
+
+
+
+.content h2{
+	font-family: 'poppins', sans-serif;
+}
+	</style>
+</head>
+<body>
+
+	<header class="header">
+		<a href="#" class="logo">
+		<ion-icon name="bicycle"></ion-icon>
+		Litunene Insurance</a>
+		<nav class="nav">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Reviews</a>
+			
+		
+
+			
+
+
+		</nav>
+
+	</header>
+
+	<section class="home">
+		<div class="content">
+	<h2>Ensuring Your Peace of Mind with Reliable Coverage</h2>
+	<p>Litunene Insurance is committed to providing top-tier insurance solutions that protect what matters most to you.
+		Litunene Insurance is a strong and professional insurance agency. It conveys a sense of protection and top-tier service.
+	</p>
+	<a href="get started.html">Get started</a><br><br><br><br><br><br><br><br><br><br>
+
+</div>
+
+
+<div class="wrapper-login">
+	<h2>Login</h2>
+	<form action="">
+		<div class="input-box">
+			<span class="icon"><ion-icon name="person"></ion-icon></span>
+			<input type="text" required>
+			<label>Enter your username</label> 
+		</div>
+
+		<div class="input-box">
+			<span class="icon"><ion-icon name="mail"></ion-icon></span>
+			<input type="email" required>
+			<label>Enter your email</label> 
+		</div>
+
+		<div class="input-box">
+			<span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+			<input type="password" required>
+			<label>Enter your password</label> 
+	</div>
+	<div class="remember-forgot">
+		<label><input type="checkbox">Remember me</label>
+		<a href="https://account.microsoft.com/account/Account">Forgot password?</a>
+	</div>
+	<button type="submit" class="butn">Login</button>
+<div class="register-link">
+	<p>Not a member?<a href="https://account.microsoft.com/account/Account">Sign up now</a></p>
+</div>	</form>
+</div>
+</section>
+
+
+			
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
+
+<footer>
+
+	<p>&copy; 2025 Litunene Insurance Agency.All rights reserved</p>
+</footer>
