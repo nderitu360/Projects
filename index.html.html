@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riritech Africa</title>
+  <style>
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo{
+   width: 100px;
+      height: 100px;
+      justify-content: left;
+      transform: translateY(45px);
+}
+.logo{
+  font-size: 30px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: white;
+  color: darkblue;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.nav a{
+			position: relative;
+			font-size: 1em;
+			color: darkblue;
+			text-decoration: none;
+			margin-left: 40px;
+      gap: 0px;
+		}
+
+		.nav a::after{
+			content: ' ';
+			position: absolute;
+			left: 0;
+			bottom: -6px;
+			width: 100%;
+			height: 3px;
+			background: darkblue;
+			border-radius: 5px;
+			transform: scaleX(0);
+			transition: .5s;
+		}
+
+		.nav a:hover::after{
+			transform: scaleX(1);
+		}
+
+
+.hero {
+  background: linear-gradient(to right, #0c2d57, darkblue ) ;
+  color: rgb(255, 255, 255);
+  padding: 4rem 2rem;
+  text-align: center;
+
+}
+.slider-container {
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+ margin: auto;
+}
+.slider-track {
+  display: flex;
+  width:100%;
+  animation: slide 10s infinite linear;
+}
+.slider-track img {
+width: 100%;
+flex-shrink: 0;
+}
+
+@keyframes slide{
+    0%{ transform: translateX(0);}
+    20%{ transform: translateX(0%);}
+    25%{ transform: translateX(-100%);}
+    45%{ transform: translateX(-100%);}
+    50%{ transform: translateX(-200%);}
+    70%{ transform: translateX(-200%);}
+    75%{ transform: translateX(-300%);}
+    95%{ transform: translateX(-300%);}
+    100%{ transform: translateX(0%);}
+}
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  
+	color: #fff;
+	text-decoration: none;
+	border: 2px solid #fff;
+	font-weight: 500;
+	padding: 10px 40px;
+	border-radius: 40px;
+	transition: .5s;
+}
+.btn:hover{
+	background: whitesmoke;
+  color: darkblue;
+}
+
+
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: white;
+  margin: 1rem 0;
+}
+
+.services .service-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service {
+  flex: 1;
+  min-width: 250px;
+  background: #e4e4e4;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+footer {
+  background: #0c2d57;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .services .service-items {
+    flex-direction: column;
+  }
+}
+
+.butn{
+    color: #fff;
+    background-color: darkgreen;
+	text-decoration: none;
+	border: 2px solid darkgreen;
+	font-weight: 500;
+	padding: 10px 40px;
+	border-radius: 40px;
+  justify-content: center;
+  }
+  .butn:hover{
+    background: white;
+    color: darkgreen;
+  }
+
+.gallery{
+  background: linear-gradient(rgb(40, 194, 228), rgb(48, 48, 158), rgb(32, 208, 217));
+}
+
+#contact ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.9em;
+    color: black;
+    text-decoration: none;
+     }
+
+     .learn{
+    color: #fff;
+    background-color: darkblue;
+	text-decoration: none;
+	border: 2px solid darkblue;
+	font-weight: 500;
+	padding: 10px 40px;
+	border-radius: 40px;
+  justify-content: center;
+  }
+  .learn:hover{
+    background: white;
+    color: darkblue;
+  }
+
+  .container{
+    display: flex;
+    height: 50vh;
+     justify-content: center;
+     gap: 55px;
+}
+.box{
+    width: 350px;
+    height: 250px;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.box h3{
+  color: #0c2d57;
+}
+
+#box1{
+    background-color: white;
+
+}
+#box2{
+    background-color: white;
+}
+#box3{
+    background-color:white;
+}
+
+.message{
+  justify-content: center;
+}
+.message .input-box{
+      position: relative;
+	width: 50%;
+	height: 50px;
+	margin: 40px 0;
+  border-radius: 14px;
+  padding: 1rem;
+  color: darkblue;
+  border: solid #0c2d57;
+}
+
+.send{
+    width: 50%;
+    height: 90px;
+    margin-right: 50px;
+    transform: translate(210px, -45px);
+    border-radius: 14px;
+    padding: 1rem;
+    font-family: arial;
+   color: darkblue;
+   border: solid #0c2d57;
+}
+
+#btn{
+  width: 30%;
+    height: 50px;
+    color: #fff;
+    background-color: #0c2d57;
+      transform: translate(-340px, -8px);
+      margin-right: 10px;
+
+}
+
+#email{
+  transform: translateY(-45px);
+
+}
+
+.mission{
+  border-top: 3px solid #0c2d57;
+  border-bottom:  3px solid #0c2d57;
+  padding: 20px;
+}
+
+.vision{
+  
+  border-bottom:  3px solid #0c2d57;
+  padding: 30px;
+}
+
+#impact{
+  text-align: center;
+  display: flex;
+  gap: 40px;
+  padding: 100px; 
+}
+
+.impacth3{
+  font-size: 4em;
+}
+
+.impacts{
+  padding-left: 14px;
+  padding-right: 14px;
+  transform: translateX(-40px);
+  color: #0c2d57;
+}
+ 
+ 
+
+ .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+            gap: 20px;
+          justify-content: center;
+        }
+        video {
+            width: 350px;
+            height: 250px;
+        }
+
+
+
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img id="logo" src="C:\Users\Administrator\Downloads\Gold_Luxury_Initial_Logo-removebg-preview.png"><b>RiriTech Africa</b></div>
+    <nav class="nav">
+			<a href="#home">Home</a>
+			<a href="#about">About</a>
+			<a href="#programs">Programs</a>
+			<a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+			
+  </header>
+
+  <section class="hero">
+    
+    <h1>Innovating Africa's Future</h1>
+    <p>Tech solutions for a smarter, sustainable continent.</p><br>
+    <a href="#programs" class="btn">Explore programs</a>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>Riritech Africa is a forward-thinking tech company focused on driving innovation across the African continent. We specialize in software solutions, AI development, and digital transformation strategies tailored for emerging markets.Founded by Riri, RiriTech is a community-focused initiative driving tech education and environmental sustainability. We equip youth, women, and rural innovators with digital skills and climate-tech knowledge to build a better Africa.</p><br><br>
+    <div class="mission"><h2>Our mission</h2>
+    <p>Riritech Africa is committed to delivering cutting-edge technology solutions that enhance efficiency, foster economic growth, and improve lives. Through strategic partnerships, research, and sustainable practices, we aim to bridge the digital divide and create impactful technological advancements tailored to the African market.</p></div>
+
+     <div class="vision"><h2>Our vision</h2>
+    <p>To be the leading technology solutions provider in Africa, driving innovation, empowering communities, and shaping a digitally connected future.</p></div>
+  </section>
+
+   <section id="Videos"><br>
+
+    <h2 style="text-align: center; color: #0c2d57;font-size: 1.7em;">Our News</h2><br>
+    <div class="video-container">
+       
+           <video controls>
+            <source src="c:\Users\Administrator\Desktop\Projects\1.mp4" type="video/mp4" class="video">
+        </video>
+
+        <video controls>
+            <source src="c:\Users\Administrator\Desktop\Projects\2.mp4" type="video/mp4" class="video">
+        </video>
+
+        <video controls>
+            <source src="c:\Users\Administrator\Desktop\Projects\invideo-ai-1080 Inside Riri Tech_ CEO Riri's Candid Inte 2025-05-24.mp4" type="video/mp4" class="video">
+        </video>
+      </div><br><br>
+  </section>
+
+  <section id="impact" style="background-color: #fff;">
+    <h1 style=" transform: translate(450px,-45px); font-size: 2em; color: #0c2d57; ">Our impact</h2><br><br><br><br>
+  <div class="impacts" id="impact1"><h3 class="impacth3">+5000</h3><br><p>Students Trained</p></div>
+  <div class="impacts" id="impact2"><h3 class="impacth3">15</h3><br><p>Community hubs</p></div>
+  <div class="impacts" id="impact3"><h3 class="impacth3">8</h3><br><p>Countries reached</p></div><br><br><br><br><br>
+
+  </section>
+
+  <section id="programs"><br>
+
+    <h2 style="text-align: center; color: #0c2d57;font-size: 1.7em;">Our Programs</h2><br><br>
+    <div class="container">
+        <div class="box" id="box1"><br> <h3>Tech Bootcamps</h3>
+          <p >Intensive coding and digital skills training for youth and women in underrepresented areas.</p><br>
+          <a  class="learn" href="#">
+            <b><ion-icon    name="arrow-forward"></ion-icon></b>
+            Learn more</a><br><br></div>
+
+        <div class="box" id="box2"><br><h3>Sustainability Workshops</h3>
+          <p>Raising awareness on renewable energy, climate resilience, and green innovation.</p><br><br>
+          <a  class="learn" href="#">
+            <ion-icon name="arrow-forward"></ion-icon>
+            Learn more</a><br><br></div>
+
+        <div class="box" id="box3"><br><h3 >Community Hubs</h3>
+          <p>Tech hubs in rural Kenya where people access tools, internet, and learning resources.</p><br>
+          <a  class="learn" href="#">
+            <ion-icon   name="arrow-forward"></ion-icon>
+            Learn more</a><br><br></div>
+        
+    </div>
+  </section>
+
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="service-items">
+      <div class="service">
+        <h3>Software Development</h3>
+        <p>Custom applications and platforms to solve real-world problems.</p>
+      </div>
+      <div class="service">
+        <h3>AI & Data</h3>
+        <p>Harnessing artificial intelligence for smarter decision-making.</p>
+      </div>
+      <div class="service">
+        <h3>Digital Transformation</h3>
+        <p>Helping businesses and governments evolve through technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery">
+    <h2 style="font-size: 1.9em; font-family: algerian; ">Images</h2>
+    <div class="slider-container">
+      <div class="slider-track">
+          <img src="C:\Users\Administrator\Desktop\images\download 5.jpg"alt="image 1">
+          <img src="C:\Users\Administrator\Desktop\images\download 4.jpg"alt="image 2">
+          <img src="C:\Users\Administrator\Desktop\images\download 6.jpg"alt="image 3">
+          <img src="C:\Users\Administrator\Desktop\images\download 8.jpg"alt="image 4">
+           <img src="C:\Users\Administrator\Desktop\images\download 1.jpeg"alt="image 5">
+          
+        </div>
+        </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:info@riritech.africa">info@riritech.africa</a></p><br><br>
+      <!-- Get in touch Section -->
+       <div class="Get in touch ">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold text-green-800">Get In Touch</h3>
+      <p class="mt-4 text-green-900">Partner with us, volunteer, or join a program – let’s create sustainable impact together.</p>
+      <form class="message">
+        
+        
+        <input type="text" placeholder="Your name" class="input-box" required>
+        <input type="email" class="input-box" placeholder="Your email" id="email" required>
+        <textarea placeholder="Your Message" rows="4" class="send"></textarea>
+        <button type="submit" id="btn">Send Message</button><br><br>
+      </form>
+    </div>
+    </div>
+
+     <ul style=" display: flex;
+                
+                gap: 5px;">
+                    <li><a href="https://www.instagram.com" class="mail">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.facebook.com" class="mail">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.X.com" class="mail">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.linkedin.com" class="mail">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.skype.com" class="mail">
+                        <ion-icon name="logo-skype"></ion-icon>
+                        </a></li>
+                    <li><a href="https://www.pinterest.com" class="mail">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        </a></li><br>
+                </ul>
+  
+  </section>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    
+  </script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Riritech Africa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
